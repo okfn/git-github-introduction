@@ -81,4 +81,47 @@ git show <the commit id>
 to see the commit itself. - this helps you understand what people have
 done.
 
+Cloning a repository
+--------------------
+
+Until now we've only worked on a repository alone - imagine we'd want
+others to collaborate with - or we want to contribute to someone's project.
+We'll need to clone the original repository.
+
+Cloning is basically copying with the whole information attached to it -
+plus git remembers where your current repository comes from and makes it
+easy to update it if the original changes.
+
+Let's clone our sample project
+
+```
+cd ..
+git clone my-new-project new-project
+cd new-project
+```
+
+This will create a directory called new-project, next to my-new-project
+(the first parameter of clone is what to clone - in this case the directory
+my-new-project - into the directory new-project) NOTE: you can clone from
+various sources including the internet (using urls - you'll see that
+later). 
+
+Now we can edit the files in new-project and commit the changes... (see
+above).
+
+If we change back to the original directory we can *pull* the changes in.
+
+```
+cd ../my-new-project
+git pull ../new-project master
+```
+
+This will update the original with the changes you committed in the cloned
+branch. - NOTE: the second argument tells you which "branch" to clone - use
+"master" unless you understand branches or told to use another one.
+
+Of course you could do this the other way around - and pull in changes made
+to the original repository (in this case, you can just type ```git pull```
+since git knows where you cloned from)
+
 
