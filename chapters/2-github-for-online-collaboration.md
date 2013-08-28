@@ -12,11 +12,15 @@ Take for example the git repository having this tutorial - it lives on
 github and anyone on the internet can simply clone it - to have a local
 copy to work with. 
 
+Publishing/Creating a repository on Github
+------------------------------------------
 If you want to create a new repository or publish one of your projects
 that is already a git repository. There is a small "create a new repo"
 ![create-new-repo](img/create-new-repo.png) button. Click this and github
 will walk you through the commands of doing so.
 
+Contributing to a team project
+------------------------------
 In many cases you will want to contribute to a project. In some cases you
 might have direct access to the repository (e.g. it's an OKFN project and
 you are in the OKFN group) - then you can simply clone, edit, commit your
@@ -34,8 +38,8 @@ git push
 
 This will push your changes.
 
-Pull Requests
--------------
+Pull Requests - Contributing to a project where you're not a team member
+------------------------------------------------------------------------
 
 If you're not part of the team - that means you can not push to the
 repository you want to contribute you'll need to go the following route
